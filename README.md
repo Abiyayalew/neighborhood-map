@@ -6,10 +6,10 @@ Develop a single page application featuring a map of your neighborhood or a     
 
 ## Running Instruction:
 
- 1. CLICK  this Link (http://abiyayalew.github.io/neighborhood-map/)
+ * CLICK  this Link (http://abiyayalew.github.io/neighborhood-map/)
           or 
- 2. Clone or download the repository 
- 3. CLICK the "index.html" file by opening the project folder.
+ * Clone or download the repository 
+ * CLICK the "index.html" file by opening the project folder.
 
 
 
