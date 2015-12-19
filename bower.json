@@ -1,8 +1,12 @@
 {
-  "name": "front-NeighborhoodMap",
+  "name": "Neighborhood Map",
+  "version": "0.0.0",
+  "homepage": " http://abiyayalew.github.io/neighborhood-map",
+  "author": "Abiy Ayalew",
+    
   "dependencies": {
     "jquery": "~2.1.4",
     "knockout": "~3.4.0",
-    "bootstrap": "~3.3.6"
-  }
+  },
+  "description": "Front-end Project 5(Udacity)" 
 }
