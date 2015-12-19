@@ -1,0 +1,8 @@
+{
+  "name": "front-NeighborhoodMap",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "knockout": "~3.4.0",
+    "bootstrap": "~3.3.6"
+  }
+}
