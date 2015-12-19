@@ -1,161 +1,155 @@
 html,
 body {
-  font-family: Arial, Sans-serif;
-  background-color:#eee;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, Sans-serif;
+    background-color: #eee;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #map {
-  height: 100%;
-  width:80%;
-  float:right;
+    height: 100%;
+    width: 80%;
+    float: right;
 }
 
-#placeHeader{
-  position:fixed;
-  top:5px;
-  left: 1%;
-  width: 25%;
-  margin-bottom:5%;
+#placeHeader {
+    position: fixed;
+    top: 5px;
+    left: 1%;
+    width: 25%;
+    margin-bottom: 5%;
 }
 
 svg {
-  display: none;
+    display: none;
 }
 
 #search {
-  position:fixed;
-  left: 0.1%;
-  top: 65px;
-  height: 25px;
-  width: 19.5%;
-  font-size: 15px;
+    position: fixed;
+    left: 0.1%;
+    top: 65px;
+    height: 25px;
+    width: 19.5%;
+    font-size: 15px;
 }
 
 #list-view {
-  position: fixed;
-  height: 70%;
-  overflow: auto;
-  top: 90px;
-  left: 0%;
-  width: 20%;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-}
-
-
-#error {
-  position: fixed;
-  top: 350px;
-  left: 0%;
-  width: 20%;
-}
-
-/*Credit https://gist.github.com/jedsundwall/586144*/
-li:after {
-content: ", ";
-}
-
-li:last-child:after {
-content: "";
-}
-       ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        height: 350px;
-        width: 200px;
-        overflow-y: scroll;
-      }
-      li {
-        background-color: #f1f1f1;
-        padding: 10px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-      li:nth-child(odd) {
-        background-color: #fcfcfc;
-      }
-      
-     
-
-
-@media only screen and (max-width: 650px) {
-
-    h2 {
-      font-size: 10px;
-    }
-
-    /*#iWindow {
-      height: 150px;
-    }*/
-
-    #pic {
-      display: none;
-    }
-
-    #hamburger {
     position: fixed;
-    left: 85%;
-    right: 0;
-    top: 0;
-    width: 40px;
-    }
-
-    svg {
-    display: block;
-    width: 40px;
-    fill: #000;
-    }
-
-    #placeHeader {
-    position: fixed;
-    top: 0px;
-    width: 30%;
-    left: 5%;
-    }
-
-    .navClosed {
-      display: none;
-    }
-
-    #search {
-    position: fixed;
-    left: 5%;
-    top: 40px;
-    height: 30px;
-    width: 29%;
-    font-size: 8px;
-    }
-
-    #list-view {
-    position: fixed;
-    height:35%;
+    height: 70%;
     overflow: auto;
-    top: 80px;
-    left: 20px;
-    width: 30%;
+    top: 90px;
+    left: 0%;
+    width: 20%;
     background-color: #fff;
     margin: 0;
     padding: 0;
     font-size: 15px;
+}
+
+#error {
+    position: fixed;
+    top: 350px;
+    left: 0%;
+    width: 20%;
+}
+
+li:after {
+    content: ", ";
+}
+
+li:last-child:after {
+    content: "";
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    width: 200px;
+    overflow-y: scroll;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+li:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+@media only screen and (max-width: 650px) {
+
+    h2 {
+        font-size: 10px;
+    }
+
+    #pic {
+        display: none;
+    }
+
+    #hamburger {
+        position: fixed;
+        left: 85%;
+        right: 0;
+        top: 0;
+        width: 40px;
+    }
+
+    svg {
+        display: block;
+        width: 40px;
+        fill: #000;
+    }
+
+    #placeHeader {
+        position: fixed;
+        top: 5px;
+        left: 1%;
+        width: 25%;
+        margin-bottom: 5%;
+    }
+
+    .navClosed {
+        display: none;
+    }
+
+    #search {
+        position: fixed;
+        left: 0.1%;
+        top: 65px;
+        height: 25px;
+        width: 19.5%;
+        font-size: 15px;
+    }
+
+    #list-view {
+        position: fixed;
+        height: 70%;
+        overflow: auto;
+        top: 90px;
+        left: 0%;
+        width: 20%;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
     }
 
     #error {
-    position: fixed;
-    top: 320px;
-    left: 5%;
-    width: 30%;
+        position: fixed;
+        top: 350px;
+        left: 0%;
+        width: 20%;
     }
+
     .info-window {
-    max-width: 250px;
-    text-align: center;
-    }
-
-
+        max-width: 250px;
+        text-align: center;
+    };
 }

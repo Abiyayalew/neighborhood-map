@@ -79,7 +79,9 @@ function initMap() {
         center : neightborhood
     };
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
+// Start the ViewModel here so it doesn't initialize before Google Maps loads
+    ko.applyBindings(new ViewModel());
+}
     
 
 //  Print error message ,if google maps isn't working
@@ -252,6 +254,3 @@ var ViewModel = function () {
 
 }; // ViewModel
 
-// Start the ViewModel here so it doesn't initialize before Google Maps loads
-    ko.applyBindings(new ViewModel());
-}
