@@ -1,24 +1,19 @@
 html,
 body {
     font-family: Arial, Sans-serif;
-    background-color: #eee;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 #map {
     height: 100%;
-    width: 80%;
-    float: right;
 }
 
-#placeHeader {
+.location-header {
     position: fixed;
-    top: 5px;
-    left: 1%;
-    width: 25%;
-    margin-bottom: 5%;
+    top: 40px;
+    width: 40%;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 svg {
@@ -28,7 +23,7 @@ svg {
 #search {
     position: fixed;
     left: 0.1%;
-    top: 65px;
+    top: 80px;
     height: 25px;
     width: 19.5%;
     font-size: 15px;
@@ -36,22 +31,15 @@ svg {
 
 #list-view {
     position: fixed;
-    height: 70%;
+    height: 50%;
     overflow: auto;
-    top: 90px;
+    top: 120px;
     left: 0%;
     width: 20%;
     background-color: #fff;
     margin: 0;
     padding: 0;
     font-size: 15px;
-}
-
-#error {
-    position: fixed;
-    top: 350px;
-    left: 0%;
-    width: 20%;
 }
 
 li:after {
@@ -83,10 +71,10 @@ li:nth-child(odd) {
     background-color: #fcfcfc;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width:375px) {
 
-    h2 {
-        font-size: 10px;
+    .location-header {
+        font-size: 15px;
     }
 
     #pic {
@@ -107,49 +95,61 @@ li:nth-child(odd) {
         fill: #000;
     }
 
-    #placeHeader {
-        position: fixed;
-        top: 5px;
-        left: 1%;
-        width: 25%;
-        margin-bottom: 5%;
-    }
-
     .navClosed {
         display: none;
     }
 
     #search {
-        position: fixed;
-        left: 0.1%;
-        top: 65px;
-        height: 25px;
-        width: 19.5%;
-        font-size: 15px;
+        width: 70%;
+        font-size: 12px;
     }
 
     #list-view {
-        position: fixed;
-        height: 70%;
-        overflow: auto;
-        top: 90px;
-        left: 0%;
-        width: 20%;
-        background-color: #fff;
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-    }
-
-    #error {
-        position: fixed;
-        top: 350px;
-        left: 0%;
-        width: 20%;
+        width: 70%;
+        font-size: 12px;
     }
 
     .info-window {
         max-width: 250px;
         text-align: center;
+    };
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .location-header {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    #search {
+        top: 80px;
+        width: 40%;
+        font-size: 12px;
+    }
+
+    #list-view {
+        top: 120px;
+        width: 40%;
+        font-size: 12px;
+    }
+
+    .info-window {
+        max-width: 250px;
+        text-align: center;
+    };
+}
+
+@media only screen and (min-device-width:667px) {
+    .location-header {
+        width: 240px;
+    }
+
+    #search {
+        width: 240px;
+    }
+
+    #list-view {
+        width: 240px;
     };
 }
