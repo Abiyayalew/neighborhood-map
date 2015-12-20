@@ -191,9 +191,20 @@ var ViewModel = function () {
                     infowindow.setContent(content);
                 });
             },
-
+            // Alert the user on error. Set messages in and infowindow
+            error: function (e) {
+                infowindow.setContent('<h5>Foursquare data is unavailable. Please try refreshing later.</h5>');
+                
+            }
         });
-
+        // This event listener makes the error message on AJAX error display in the infowindow
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, this);
+            placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);
+            setTimeout(function () {
+                placeItem.marker.setAnimation(null);
+            }, 500);
+        });
         
     });
 
@@ -254,3 +265,5 @@ var ViewModel = function () {
 
 }; // ViewModel
 
+// Start the ViewModel here so it doesn't initialize before Google Maps loads
+    ko.applyBindings(new ViewModel());
